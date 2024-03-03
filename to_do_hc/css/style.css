@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inder', sans-serif;
+    color: #f4f4f4;
+    list-style: none;
+}
+
+:root{
+    --bg_color: #0E1B2E;
+    --cor_destaque: #FB2DFF;
+    --cor_principal: #2D81FF;
+}
+
+body{    
+    background-color: #0E1B2E;
+}
+
+.tasks-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tasks-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+.tasks-header h2{
+    font-size: 2em;
+    margin-bottom: 2%;
+}
+.tasks-header form{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    position: relative;
+    
+}
+.tasks-header #task-title{    
+    width: 100%;
+    padding: 10px 10px;
+    color: #232323;
+    outline: 0;
+    border: none;
+    border-radius: 5px;   
+    
+}
+.tasks-header #add-btn{
+    background-color: var(--cor_principal);
+    height: 100%;
+    padding: 10px 15px;
+    border: none;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: .5s;
+}
+.tasks-header #add-btn:hover{
+    background-color: var(--cor_destaque);
+}
+
+.tasks-list-container{
+    width: 30%;
+}
+.tasks-list-container h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.task-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: var(--cor_principal);
+    margin-bottom: 15px;
+    transition: .5s;
+}
+.task-box li.done{
+    background-color: var(--cor_destaque);
+}
+.task-box .task-icons{
+    display: flex;
+    gap: 20px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.done{
+    background-color: var(--cor_destaque);
+}
+
+.hide{
+    display: none;
+}
