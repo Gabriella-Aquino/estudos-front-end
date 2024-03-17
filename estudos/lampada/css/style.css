@@ -13,9 +13,12 @@
     --bg-dark: #0a1a2e;
 }
 
+body{
+    background-color: var(--bg-dark);
+}
+
 .lampada-container{
     height: 100vh;
-    background-color: var(--bg-dark);
     display: flex;
     flex-direction: column;
     justify-content: center;
