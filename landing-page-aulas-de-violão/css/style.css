@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --cor-destaque: #BC8DCD;
+    --cor0: #8DCDC9;
+    --cor1: #D9FFFD;
+    --cor2: #D7D7D7;
+    --cor3: #012126;
+    --font-titulo: 'Kanit', sans-serif;
+}
+
+
+header{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    z-index: 10000; 
+}
+header .logo{
+    position: relative;
+    color: var(--cor2);
+    text-decoration: none;
+    font-weight: 700;
+}
+nav ul{
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+
+#home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/banner-1440.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#home .content{
+    background-color: rgba(0, 0, 0, 0.644);
+    padding: 50px 0px;
+}
+#home .conteudo-text{
+    width: 60%;
+    margin: auto;
+    
+}
+#home h1{
+    text-align: center;
+    color: var(--cor-destaque);
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+#home h2{
+    text-align: center;
+    color: var(--cor0);
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+#home p{
+    color: var(--cor2);
+    text-align: justify;
+}
+#home p span{
+    color: var(--cor-destaque);
+    font-size: 1.1em;
+    font-weight: 700;
+}
